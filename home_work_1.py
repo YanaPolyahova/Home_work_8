@@ -1,0 +1,23 @@
+side_square = float(input("Введите длину стороны квадрата:"))
+P_square = side_square * 4
+S_square = side_square * side_square
+print("Периметр квадрата равен: " + str(P_square))
+print("Площадь квадрата равна: " + str(S_square))
+print()
+lenght_restangle = float(input("Введите длину стороны прямоугольника:"))
+width_restangle = float(input("Введите ширину стороны прямоугольника:"))
+P_rectangle = 2 * (lenght_restangle + width_restangle)
+S_rectangle = lenght_restangle * width_restangle
+print("Периметр прямоугольника: " + str(P_rectangle))
+print("Площадь прямоугольника: " + str(S_rectangle))
+print()
+print()
+simbol = input("введите любой символ: ")
+print(simbol * int(P_square + S_rectangle))
+print()
+salary = float(input("Введите заработную плату в месяц: "))
+mortgage = float(input("Введите, какой процент(%) уходит на ипотеку: "))
+life = float(input("Введите, какой процент(%) от зп уходит на жизнь: "))
+print()
+print("На ипотеку было потрачено: " + str(mortgage / 100 * salary * 12) + " рублей")
+print("Было накоплено: " + str(salary * 12 - (mortgage / 100 * salary * 12) - (life / 100 * salary * 12)) + " рублей")
